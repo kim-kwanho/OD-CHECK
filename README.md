@@ -108,9 +108,16 @@ OD-CHECK/
 │   ├── schema.sql        # 데이터베이스 스키마
 │   ├── migration_add_password.sql  # 마이그레이션
 │   └── sample_data.sql   # 샘플 데이터
-├── PROJECT_DESIGN_GUIDE.md      # 전체 설계 가이드
-├── STEP_BY_STEP_GUIDE.md        # 단계별 상세 가이드
-├── IMPLEMENTATION_CHECKLIST.md  # 구현 체크리스트
+├── docs/                  # 문서
+│   ├── PROJECT_DESIGN_GUIDE.md      # 전체 설계 가이드
+│   ├── STEP_BY_STEP_GUIDE.md        # 단계별 상세 가이드
+│   ├── IMPLEMENTATION_CHECKLIST.md  # 구현 체크리스트
+│   └── 15_DAY_PLAN.md              # 15일 계획
+├── guides/                # 일자별 가이드
+│   ├── DAY1_GUIDE.md     # 1일차 가이드
+│   ├── DAY2_GUIDE.md     # 2일차 가이드
+│   └── ...               # DAY3~DAY15
+├── test.http             # API 테스트 파일
 └── README.md             # 프로젝트 문서
 ```
 
@@ -215,9 +222,11 @@ Headers: Authorization: Bearer {token}
 
 프로젝트를 체계적으로 이해하고 개발하기 위한 가이드 문서:
 
-1. **[PROJECT_DESIGN_GUIDE.md](./PROJECT_DESIGN_GUIDE.md)** - 전체 시스템 설계 및 아키텍처
-2. **[STEP_BY_STEP_GUIDE.md](./STEP_BY_STEP_GUIDE.md)** - 단계별 구현 가이드 (코딩 초보자용)
-3. **[IMPLEMENTATION_CHECKLIST.md](./IMPLEMENTATION_CHECKLIST.md)** - 구현 진행 상황 체크리스트
+1. **[docs/PROJECT_DESIGN_GUIDE.md](./docs/PROJECT_DESIGN_GUIDE.md)** - 전체 시스템 설계 및 아키텍처
+2. **[docs/STEP_BY_STEP_GUIDE.md](./docs/STEP_BY_STEP_GUIDE.md)** - 단계별 구현 가이드 (코딩 초보자용)
+3. **[docs/IMPLEMENTATION_CHECKLIST.md](./docs/IMPLEMENTATION_CHECKLIST.md)** - 구현 진행 상황 체크리스트
+4. **[docs/15_DAY_PLAN.md](./docs/15_DAY_PLAN.md)** - 15일 프로젝트 진행 계획
+5. **[guides/](./guides/)** - 일자별 상세 가이드 (DAY1_GUIDE.md ~ DAY15_GUIDE.md)
 
 ## 🔒 보안 고려사항
 
@@ -243,4 +252,4 @@ Headers: Authorization: Bearer {token}
 
 ---
 
-**코딩 초보자도 따라할 수 있도록 상세한 가이드를 제공합니다. [STEP_BY_STEP_GUIDE.md](./STEP_BY_STEP_GUIDE.md)를 참고하세요!**
+**코딩 초보자도 따라할 수 있도록 상세한 가이드를 제공합니다. [docs/STEP_BY_STEP_GUIDE.md](./docs/STEP_BY_STEP_GUIDE.md)를 참고하세요!**

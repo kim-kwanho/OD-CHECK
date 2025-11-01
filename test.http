@@ -1,7 +1,9 @@
-POST http://localhost:3000/checkin
+POST http://localhost:3000/api/auth/register
 Content-Type: application/json
 
 {
-  "userId": "11111111-1111-1111-1111-111111111111",
-  "occurrenceId": "f2e634de-55f4-466b-a60a-0e44e5d3a9b3"
+  "email": "admin@example.com",
+  "password": "admin1234",
+  "name": "관리자",
+  "role": "admin"
 }
