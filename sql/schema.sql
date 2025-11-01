@@ -6,8 +6,9 @@ CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 -- users: 참가자/관리자
 CREATE TABLE IF NOT EXISTS users (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  email VARCHAR(255) UNIQUE,
-  name VARCHAR(255),
+  email VARCHAR(255) UNIQUE NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  password_hash VARCHAR(255), -- 비밀번호 해시 (NULL 허용: 기존 데이터 호환)
   role VARCHAR(50) NOT NULL DEFAULT 'participant',
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );

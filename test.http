@@ -1,0 +1,7 @@
+POST http://localhost:3000/checkin
+Content-Type: application/json
+
+{
+  "userId": "11111111-1111-1111-1111-111111111111",
+  "occurrenceId": "f2e634de-55f4-466b-a60a-0e44e5d3a9b3"
+}
