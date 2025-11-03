@@ -6,12 +6,13 @@ const { Pool } = require('pg');
 
 // 3️⃣ PostgreSQL 연결 설정
 const pool = new Pool({
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT) || 5432,
-  user: process.env.DB_USER || 'postgres',
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME, // 여기가 실제 odcheck 인지 확인
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME || 'od_check'
+  port: process.env.DB_PORT,
 });
+
 
 // 4️⃣ 연결 테스트
 pool.connect()
