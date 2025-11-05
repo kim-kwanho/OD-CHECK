@@ -1,8 +1,7 @@
-POST http://localhost:3000/checkin
+POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-  "user_id": "11111111-1111-1111-1111-111111111111",
-  "occurrence_id": "2fb4bd8a-ac58-4d80-a2e3-c0857aa73021"
+  "email": "admin@example.com",
+  "password": "admin1234"
 }
-
