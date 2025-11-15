@@ -1,7 +1,3 @@
-POST http://localhost:3000/api/auth/login
-Content-Type: application/json
-
-{
-  "email": "admin@example.com",
-  "password": "admin1234"
-}
+GET http://localhost:3000/api/auth/me
+Authorization: 
+#Bearer 여기에_로그인_시_받은_토큰_붙여넣기

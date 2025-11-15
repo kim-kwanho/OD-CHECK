@@ -2,8 +2,8 @@ POST http://localhost:3000/api/auth/register
 Content-Type: application/json
 
 {
-  "email": "admin@example.com",
-  "password": "admin1234",
-  "name": "관리자",
-  "role": "admin"
+  "email": "user2@test.com",
+  "password": "password1234",
+  "name": "테스트 사용자2",
+  "role": "participant"
 }
